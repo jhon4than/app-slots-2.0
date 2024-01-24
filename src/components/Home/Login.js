@@ -220,7 +220,7 @@ function Login() {
           <p className="login-support white-text">
             Não consegue logar? Adquira já sua licença{" "}
             <a
-              href="https://chat.whatsapp.com/KxkxFioDH2DGLZnAdDByxo"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
             >

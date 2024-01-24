@@ -23,7 +23,7 @@ const Bonus = () => {
           <button
             onClick={() =>
               window.open(
-                "https://chat.whatsapp.com/KxkxFioDH2DGLZnAdDByxo",
+                "",
                 "_blank"
               )
             }
@@ -32,7 +32,7 @@ const Bonus = () => {
           </button>
           <button
             onClick={() =>
-              window.open("https://topu2020.com/BqtjStHQ/", "_blank")
+              window.open("", "_blank")
             }
           >
             <FaRegListAlt /> Cadastre-se na Plataforma
