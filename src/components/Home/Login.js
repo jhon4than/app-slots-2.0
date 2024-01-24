@@ -193,7 +193,7 @@ function Login() {
         <p className="app-description animated-text">
           O APLICATIVO QUE HACKEIA JOGOS EM TEMPO REAL.
         </p>
-        <p className="app-descriptions animated-text">Cadastro</p>
+        <p className="app-descriptions animated-text">Login</p>
         <div className="login-form">
           <input
             type="text"
