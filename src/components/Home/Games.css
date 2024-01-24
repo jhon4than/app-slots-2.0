@@ -312,6 +312,18 @@
 .game-card:last-child {
   margin-bottom: 20px;
 }
+.games-grid-casa {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust the min-width for smaller screens */
+}
+
+.game-card-casa {
+  min-height: auto; /* Allows the card to grow with the content, avoiding fixed height cropping */
+}
+.enter-game-button {
+  padding: 5px 15px; /* Smaller padding on smaller screens */
+  font-size: 14px; /* Smaller font size on smaller screens */
+  /* ... other responsive adjustments ... */
+}
 
 /* Responsive grid for mobile devices */
 @media (max-width: 768px) {
