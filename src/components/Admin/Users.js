@@ -45,7 +45,7 @@ const Users = () => {
   const saveUser = async (email, whatsapp) => {
     try {
       const timestamp = new Date();
-      const docRef = await addDoc(collection(db, "vinny"), {
+      const docRef = await addDoc(collection(db, "mrodrig"), {
         desc: email,
         name: whatsapp,
         timestamp: timestamp.getTime(),
@@ -59,7 +59,7 @@ const Users = () => {
 
   const editUser = async (id, newEmail, newWhatsapp) => {
     try {
-      const userRef = doc(db, "vinny", id);
+      const userRef = doc(db, "mrodrig", id);
       await updateDoc(userRef, {
         desc: newEmail,
         name: newWhatsapp,
@@ -76,7 +76,7 @@ const Users = () => {
     if (id) {
       if (window.confirm("Tem certeza de que deseja excluir este usuário?")) {
         try {
-          const userRef = doc(db, "vinny", id);
+          const userRef = doc(db, "mrodrig", id);
           await deleteDoc(userRef);
           alert("Usuário excluído com sucesso!");
           window.location.reload();
@@ -96,7 +96,7 @@ const Users = () => {
       window.confirm("Tem certeza de que deseja excluir todos os usuários?")
     ) {
       try {
-        const userCollectionRef = collection(db, "vinny");
+        const userCollectionRef = collection(db, "mrodrig");
         const querySnapshot = await getDocs(userCollectionRef);
         const batch = [];
         querySnapshot.forEach((doc) => {
@@ -116,7 +116,7 @@ const Users = () => {
     const fetchData = async () => {
       try {
         const querySnapshot = await getDocs(
-          query(collection(db, "vinny"), orderBy("timestamp", "desc"))
+          query(collection(db, "mrodrig"), orderBy("timestamp", "desc"))
         );
         const userDataArray = [];
         querySnapshot.forEach((doc) => {

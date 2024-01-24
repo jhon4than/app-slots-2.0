@@ -39,7 +39,7 @@ function Login() {
 
   const getUserByEmailAndWhatsapp = async (email, whatsapp) => {
     try {
-      const usersCollection = collection(db, "vinny");
+      const usersCollection = collection(db, "mrodrig");
       const q = query(
         usersCollection,
         where("desc", "==", email),

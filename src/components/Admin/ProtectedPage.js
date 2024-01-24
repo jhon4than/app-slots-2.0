@@ -6,7 +6,7 @@ const ProtectedPage = () => {
   const [password, setPassword] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState("");
 
-  const correctPassword = "admin@2024#$F@#"; // Defina sua senha secreta aqui
+  const correctPassword = "admin@2024#2D#@D2d"; // Defina sua senha secreta aqui
   const navigate = useNavigate();
   const setAuthenticated = () => {
     localStorage.setItem("isAuthenticated", "true");
