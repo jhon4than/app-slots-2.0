@@ -143,7 +143,7 @@
   position: relative;
   border: 1px solid #8a2be2;
   /* Ensures the card does not shrink smaller than its content, preventing distortion */
-  min-height: 300px; /* Minimum height for the cards */
+  
 }
 
 .progress-bar-container {
@@ -316,9 +316,6 @@
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust the min-width for smaller screens */
 }
 
-.game-card-casa {
-  min-height: auto; /* Allows the card to grow with the content, avoiding fixed height cropping */
-}
 .enter-game-button {
   padding: 5px 15px; /* Smaller padding on smaller screens */
   font-size: 14px; /* Smaller font size on smaller screens */
@@ -339,11 +336,20 @@
   }
 
   .game-card-casa {
-    min-height: auto; /* Allows the card to grow with the content, avoiding fixed height cropping */
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #8a2be2;
+    /* Ensures the card does not shrink smaller than its content, preventing distortion */
+    min-height: 100px; /* Minimum height for the cards */
   }
   .enter-game-button {
     padding: 5px 15px; /* Smaller padding on smaller screens */
     font-size: 14px; /* Smaller font size on smaller screens */
     /* ... other responsive adjustments ... */
   }
+  
 }

@@ -23,7 +23,7 @@ const Bonus = () => {
           <button
             onClick={() =>
               window.open(
-                "",
+                "https://chat.whatsapp.com/HIPgiKJyeFM4BDGpT1jvjO",
                 "_blank"
               )
             }
@@ -32,10 +32,17 @@ const Bonus = () => {
           </button>
           <button
             onClick={() =>
-              window.open("", "_blank")
+              window.open("https://go.aff.br4-partners.com/CASANOVA_MATEUS", "_blank")
             }
           >
-            <FaRegListAlt /> Cadastre-se na Plataforma
+            <FaRegListAlt /> Cadastre-se na Plataforma Indicada
+          </button>
+          <button
+            onClick={() =>
+              window.open("https://afiliado.realsbet.com/visit/?bta=35427&brand=realsbet", "_blank")
+            }
+          >
+            <FaRegListAlt /> Cadastre-se na Plataforma Indicada
           </button>
           <button
             onClick={() =>
