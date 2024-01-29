@@ -494,7 +494,7 @@ function Home() {
             width="560"
             height="315"
             className="video"
-            src="https://youtu.be/JnOvjP6Cx-w"
+            src="https://www.youtube.com/embed/JnOvjP6Cx-w"
             frameborder="0"
             allowfullscreen
           ></iframe>

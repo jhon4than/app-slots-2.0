@@ -78,6 +78,7 @@
   border-radius: 10px; /* Bordas arredondadas para o vídeo */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para efeito de profundidade */
   display: block; /* Garante que o vídeo seja tratado como um bloco para centralização */
+  margin-bottom: 90px;
 }
 
 
