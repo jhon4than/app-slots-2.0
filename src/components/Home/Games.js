@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./Games.css"; // Importe seu arquivo CSS
 // Importando imagens
 import cardsImg from "../../assets/br4bet.jpg";
-import minesImg from "../../assets/realsbet.png";
+import minesImg from "../../assets/betopen.jpg";
 import fortuneImg from "../../imgs/fortune.jpg";
 import bacImg from "../../imgs/bacbo.jpg";
 import aviatorImg from "../../imgs/aviator.jpeg";
@@ -232,11 +232,7 @@ function Games() {
         {/* Segundo Card */}
         <div
           className="game-card-casa"
-          onClick={() =>
-            handleNewCardClick(
-              "https://afiliado.realsbet.com/visit/?bta=35427&brand=realsbet"
-            )
-          }
+          onClick={() => handleNewCardClick("https://betopen.io/?r=cgkumuik")}
         >
           <img src={minesImg} alt="Card 2" />
         </div>
