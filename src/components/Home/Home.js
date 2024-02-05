@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css"; // Importar o CSS correspondente
 import LogoMain from "../../assets/logoHome-remo.png";
 import fundo from "../../assets/imageHome.jpg";
@@ -8,6 +8,31 @@ import apple from "../../assets/apple.png";
 import android from "../../assets/android.png";
 import downloadIcon from "../../assets/botao-de-download.png";
 import TutorialModal from "./TurotialModal";
+import { initializeApp } from "firebase/app";
+import { useNavigate } from "react-router-dom";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import {
+  collection,
+  query,
+  where,
+  getDocs,
+  getFirestore,
+  addDoc,
+} from "firebase/firestore";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCfaNmtgyo1VgqVFIHJ8vq-dekSJyjjk9c",
+  authDomain: "login-app-a4816.firebaseapp.com",
+  projectId: "login-app-a4816",
+  storageBucket: "login-app-a4816.appspot.com",
+  messagingSenderId: "653367042131",
+  appId: "1:653367042131:web:95be958a59dde1477c26a6",
+  measurementId: "G-J0SB1FB8LS",
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app); // Obtenha a instância de autenticação
 
 function Home() {
   const carouselItems = [
@@ -429,6 +454,8 @@ function Home() {
   ];
   const [isTutorialOpen, setTutorialOpen] = useState(false);
   const [platform, setPlatform] = useState(null);
+  const navigate = useNavigate(); // Hook para navegar entre as rotas
+
   const openTutorial = (platform) => {
     setTutorialOpen(true);
     setPlatform(platform);
@@ -438,6 +465,61 @@ function Home() {
     setTutorialOpen(false);
     setPlatform(null);
   };
+
+  useEffect(() => {
+    const verifyUser = async () => {
+      const email = localStorage.getItem("userEmail");
+      const whatsapp = localStorage.getItem("userWhatsapp");
+  
+     
+  
+      // Verifica se o email e o whatsapp estão armazenados no localStorage
+      if (email && whatsapp) {
+        try {
+          const usersCollection = collection(db, "mrodrig");
+       
+  
+          const q = query(
+            usersCollection,
+            where("desc", "==", email), // Certifique-se de que 'desc' é o campo correto para email
+            where("name", "==", whatsapp) // E 'name' é o campo correto para whatsapp
+          );
+  
+    
+          const querySnapshot = await getDocs(q);
+  
+          if (querySnapshot.empty) {
+    
+            // Nenhum usuário encontrado, limpe o localStorage e redirecione
+            localStorage.clear();
+       
+            navigate("/"); // Redireciona para a tela inicial, ajuste a rota conforme necessário
+         
+          } else {
+            // Usuário encontrado, extraindo dados
+            const doc = querySnapshot.docs[0];
+            const userData = doc.data();
+         
+          }
+        } catch (error) {
+          console.error("Erro ao verificar usuário:", error);
+          // Em caso de erro, também limpe o localStorage e redirecione
+          localStorage.clear();
+          console.log("localStorage limpo devido a erro");
+          navigate("/");
+          console.log("Redirecionando para a tela inicial devido a erro");
+        }
+      } else {
+       
+        // Email ou Whatsapp não encontrados no localStorage, limpe e redirecione
+        localStorage.clear();
+        navigate("/");
+      }
+    };
+  
+    verifyUser();
+  }, [navigate]);
+  
 
   return (
     <div className="background">
