@@ -12,6 +12,7 @@ const ProtectedPage = () => {
     localStorage.setItem("isAuthenticated", "true");
     setIsAuthenticated(true);
   };
+  
   const handleAccess = () => {
     if (password === correctPassword) {
       setAuthenticated(); // Define a autenticação como verdadeira

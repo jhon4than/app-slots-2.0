@@ -23,6 +23,26 @@ const Bonus = () => {
           <button
             onClick={() =>
               window.open(
+                "http://t.me/footballStudiosLIVE",
+                "_blank"
+              )
+            }
+          >
+            <FaTelegramPlane /> Salas de Sinais Football Studio
+          </button>
+          <button
+            onClick={() =>
+              window.open(
+                "https://go.perfectpay.com.br/PPU38CO116E",
+                "_blank"
+              )
+            }
+          >
+            <FaRegListAlt /> Lucre com Internet Hoje
+          </button>
+          <button
+            onClick={() =>
+              window.open(
                 "https://chat.whatsapp.com/HIPgiKJyeFM4BDGpT1jvjO",
                 "_blank"
               )

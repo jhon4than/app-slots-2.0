@@ -470,36 +470,29 @@ function Home() {
     const verifyUser = async () => {
       const email = localStorage.getItem("userEmail");
       const whatsapp = localStorage.getItem("userWhatsapp");
-  
-     
-  
+
       // Verifica se o email e o whatsapp estão armazenados no localStorage
       if (email && whatsapp) {
         try {
           const usersCollection = collection(db, "mrodrig");
-       
-  
+
           const q = query(
             usersCollection,
             where("desc", "==", email), // Certifique-se de que 'desc' é o campo correto para email
             where("name", "==", whatsapp) // E 'name' é o campo correto para whatsapp
           );
-  
-    
+
           const querySnapshot = await getDocs(q);
-  
+
           if (querySnapshot.empty) {
-    
             // Nenhum usuário encontrado, limpe o localStorage e redirecione
             localStorage.clear();
-       
+
             navigate("/"); // Redireciona para a tela inicial, ajuste a rota conforme necessário
-         
           } else {
             // Usuário encontrado, extraindo dados
             const doc = querySnapshot.docs[0];
             const userData = doc.data();
-         
           }
         } catch (error) {
           console.error("Erro ao verificar usuário:", error);
@@ -510,16 +503,17 @@ function Home() {
           console.log("Redirecionando para a tela inicial devido a erro");
         }
       } else {
-       
+        console.log(
+          "Email ou Whatsapp não encontrados no localStorage, redirecionando"
+        );
         // Email ou Whatsapp não encontrados no localStorage, limpe e redirecione
         localStorage.clear();
         navigate("/");
       }
     };
-  
+
     verifyUser();
   }, [navigate]);
-  
 
   return (
     <div className="background">
