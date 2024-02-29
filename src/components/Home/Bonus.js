@@ -22,20 +22,14 @@ const Bonus = () => {
         <div className="bonus-buttons">
           <button
             onClick={() =>
-              window.open(
-                "http://t.me/footballStudiosLIVE",
-                "_blank"
-              )
+              window.open("http://t.me/footballStudiosLIVE", "_blank")
             }
           >
             <FaTelegramPlane /> Salas de Sinais Football Studio
           </button>
           <button
             onClick={() =>
-              window.open(
-                "https://go.perfectpay.com.br/PPU38CO116E",
-                "_blank"
-              )
+              window.open("https://go.perfectpay.com.br/PPU38CO116E", "_blank")
             }
           >
             <FaRegListAlt /> Lucre com Internet Hoje
@@ -62,7 +56,10 @@ const Bonus = () => {
           </button>
           <button
             onClick={() =>
-              window.open("https://betopen.io/?r=cgkumuik", "_blank")
+              window.open(
+                "https://zordbeet.com?action=register&affiliate=b6JnfGF7fXMjOjB79zVoLCJoeWFweCIyICJuYXRofXMteWF68W3nNTBAZ12g8WptY1auIjpj8WQjOjAjNDEpIjpjfGouZSIyICIvNnA3MTUqOT91Iz7",
+                "_blank"
+              )
             }
           >
             <FaRegListAlt /> Cadastre-se na Plataforma Indicada

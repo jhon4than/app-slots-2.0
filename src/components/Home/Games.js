@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Games.css"; // Importe seu arquivo CSS
 // Importando imagens
-import cardsImg from "../../assets/br4bet.jpg";
+import cardsImg from "../../assets/plataforma.jpg";
 import minesImg from "../../assets/betopen.jpg";
 import fortuneImg from "../../imgs/fortune.jpg";
 import bacImg from "../../imgs/bacbo.jpg";
@@ -232,7 +232,11 @@ function Games() {
         {/* Segundo Card */}
         <div
           className="game-card-casa"
-          onClick={() => handleNewCardClick("https://betopen.io/?r=cgkumuik")}
+          onClick={() =>
+            handleNewCardClick(
+              "https://zordbeet.com?action=register&affiliate=b6JnfGF7fXMjOjB79zVoLCJoeWFweCIyICJuYXRofXMteWF68W3nNTBAZ12g8WptY1auIjpj8WQjOjAjNDEpIjpjfGouZSIyICIvNnA3MTUqOT91Iz7"
+            )
+          }
         >
           <img src={minesImg} alt="Card 2" />
         </div>
