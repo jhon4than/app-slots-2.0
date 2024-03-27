@@ -3,12 +3,13 @@ import { useNavigate } from "react-router-dom";
 import "./Games.css"; // Importe seu arquivo CSS
 // Importando imagens
 import cardsImg from "../../assets/br4bet.jpg";
-import minesImg from "../../assets/plataforma.jpg";
+import minesImg from "../../assets/bonus.jpg";
 import fortuneImg from "../../imgs/fortune.jpg";
 import bacImg from "../../imgs/bacbo.jpg";
 import aviatorImg from "../../imgs/aviator.jpeg";
 import mouseimg from "../../imgs/mouse.jpg";
 import fortuneoximg from "../../imgs/fortune-ox.jpg";
+import fortunedragon from "../../imgs/pgsoft-fortune-dragon.webp";
 import rabbitimg from "../../imgs/fortunerabbit.jpeg";
 import dragontigerimg from "../../imgs/dragontiger.jpeg";
 import backgroundImg from "../../assets/img03.png";
@@ -132,6 +133,13 @@ function Games() {
   };
 
   const gamesList = [
+    {
+      name: "Fortune Dragon",
+      img: fortunedragon,
+      category: "Slots",
+      payout: "95.75%",
+      available: true,
+    },
     {
       name: "Tiger",
       img: fortuneImg,
