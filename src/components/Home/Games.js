@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./Games.css"; // Importe seu arquivo CSS
 // Importando imagens
 import cardsImg from "../../assets/br4bet.jpg";
-import minesImg from "../../assets/bonus.jpg";
+import minesImg from "../../assets/zord.jpg";
 import fortuneImg from "../../imgs/fortune.jpg";
 import bacImg from "../../imgs/bacbo.jpg";
 import aviatorImg from "../../imgs/aviator.jpeg";
@@ -242,7 +242,7 @@ function Games() {
           className="game-card-casa"
           onClick={() =>
             handleNewCardClick(
-              "https://zordbeet.com?action=register&affiliate=b6JnfGF7fXMjOjB79zVoLCJoeWFweCIyICJuYXRofXMteWF68W3nNTBAZ12g8WptY1auIjpj8WQjOjAjNDEpIjpjfGouZSIyICIvNnA3MTUqOT91Iz7"
+              "https://hudsbet.cxclick.com/visit/?bta=35455&brand=hudsbet"
             )
           }
         >
