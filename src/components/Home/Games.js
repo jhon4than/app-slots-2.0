@@ -26,6 +26,8 @@ import pgsoftspeedwinner from "../../imgs/pgsoft-speed-winner.png";
 import pgsbikini from "../../imgs/50004.png";
 import Icescape from "../../imgs/50011.png";
 import dragontiger from "../../imgs/dragon-tiger.png";
+import mania from "../../imgs/MANIA.jpg";
+import wild from "../../imgs/WILD.jpg";
 
 import { FaDice, FaChess, FaBurn } from "react-icons/fa";
 import { CgGames } from "react-icons/cg";
@@ -133,6 +135,20 @@ function Games() {
   };
 
   const gamesList = [
+    {
+      name: "Cash Mania",
+      img: mania,
+      category: "Slots",
+      payout: "95.75%",
+      available: true,
+    },
+    {
+      name: "Wild Cashout",
+      img: wild,
+      category: "Slots",
+      payout: "95.75%",
+      available: true,
+    },
     {
       name: "Fortune Dragon",
       img: fortunedragon,
