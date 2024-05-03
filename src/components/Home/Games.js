@@ -247,7 +247,7 @@ function Games() {
           className="game-card-casa"
           onClick={() =>
             handleNewCardClick(
-              "https://go.aff.br4-partners.com/CASANOVA_MATEUS"
+              "https://go.aff.br4-partners.com/chhi65y1"
             )
           }
         >
