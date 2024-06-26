@@ -1,9 +1,9 @@
 import React from "react";
 import "./Bonus.css"; // Este é o arquivo CSS onde você vai definir todos os seus estilos
-import imgbonus from "../../assets/cadastro.jpeg";
+import imgbonus from "../../assets/logodogrupovip.jpg";
 import HeaderLogo from "../Home/headerLogo";
+import { BiSupport } from "react-icons/bi";
 import {
-  FaTelegramPlane,
   FaRegListAlt,
   FaDownload,
   FaWhatsapp,
@@ -20,24 +20,24 @@ const Bonus = () => {
         </div>
 
         <div className="bonus-buttons">
-          <button
+          {/* <button
             onClick={() =>
               window.open("http://t.me/footballStudiosLIVE", "_blank")
             }
           >
             <FaTelegramPlane /> Salas de Sinais Football Studio
-          </button>
-          <button
+          </button> */}
+          {/* <button
             onClick={() =>
               window.open("https://go.perfectpay.com.br/PPU38CO116E", "_blank")
             }
           >
             <FaRegListAlt /> Lucre com Internet Hoje
-          </button>
+          </button> */}
           <button
             onClick={() =>
               window.open(
-                "https://chat.whatsapp.com/EUcy9j28CND1tQ2dw5YWup",
+                "https://chat.whatsapp.com/ISUBjan4iuh0DFYxAyZ937",
                 "_blank"
               )
             }
@@ -70,6 +70,16 @@ const Bonus = () => {
             }
           >
             <FaDownload /> Baixar PDF de Bônus
+          </button>
+          <button
+            onClick={() =>
+              window.open(
+                "https://www.instagram.com/mateus_marinss?igsh=MWdjZWo5Mm95enphag%3D%3D&utm_source=qr",
+                "_blank"
+              )
+            }
+          >
+            <BiSupport /> Suporte
           </button>
         </div>
       </div>
