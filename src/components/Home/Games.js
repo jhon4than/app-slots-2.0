@@ -251,6 +251,7 @@ function Games() {
             )
           }
         >
+          
           <img src={cardsImg} alt="Card 1" />
         </div>
         {/* Segundo Card */}
