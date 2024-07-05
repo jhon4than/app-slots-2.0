@@ -246,22 +246,15 @@ function Games() {
         <div
           className="game-card-casa"
           onClick={() =>
-            handleNewCardClick(
-              "https://go.aff.br4-partners.com/chhi65y1"
-            )
+            handleNewCardClick("https://go.aff.br4-partners.com/chhi65y1")
           }
         >
-          
           <img src={cardsImg} alt="Card 1" />
         </div>
         {/* Segundo Card */}
         <div
           className="game-card-casa"
-          onClick={() =>
-            handleNewCardClick(
-              "https://hudsbet.cxclick.com/visit/?bta=35455&brand=hudsbet"
-            )
-          }
+          onClick={() => handleNewCardClick("https://bit.ly/MATEUSSTART")}
         >
           <img src={minesImg} alt="Card 2" />
         </div>
