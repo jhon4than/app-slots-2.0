@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./Games.css"; // Importe seu arquivo CSS
 // Importando imagens
 import cardsImg from "../../assets/uxbet.jpeg";
-import minesImg from "../../assets/zord.jpg";
+import minesImg from "../../assets/br4bet.jpg";
 import minesImg2 from "../../assets/betmilion.jpeg";
 import fortuneImg from "../../imgs/fortune.jpg";
 import bacImg from "../../imgs/bacbo.jpg";
@@ -256,10 +256,12 @@ function Games() {
         >
           <img src={cardsImg} alt="Card 1" />
         </div>
-        {/* Segundo Card */}
-        <div
+         {/* Primeiro Card */}
+         <div
           className="game-card-casa"
-          onClick={() => handleNewCardClick("https://bit.ly/MATEUSSTART")}
+          onClick={() =>
+            handleNewCardClick("https://go.aff.br4-partners.com/chhi65y1")
+          }
         >
           <img src={minesImg} alt="Card 2" />
         </div>
