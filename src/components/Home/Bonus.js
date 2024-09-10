@@ -37,7 +37,7 @@ const Bonus = () => {
           <button
             onClick={() =>
               window.open(
-                "https://chat.whatsapp.com/ISUBjan4iuh0DFYxAyZ937",
+                "https://chat.whatsapp.com/C2Mx9gRaRhTIppBmZC3IjJ",
                 "_blank"
               )
             }

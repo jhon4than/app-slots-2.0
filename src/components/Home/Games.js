@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Games.css"; // Importe seu arquivo CSS
 // Importando imagens
-import cardsImg from "../../assets/br4bet.jpg";
+import cardsImg from "../../assets/uxbet.jpeg";
 import minesImg from "../../assets/zord.jpg";
+import minesImg2 from "../../assets/betmilion.jpeg";
 import fortuneImg from "../../imgs/fortune.jpg";
 import bacImg from "../../imgs/bacbo.jpg";
 import aviatorImg from "../../imgs/aviator.jpeg";
@@ -28,6 +29,8 @@ import Icescape from "../../imgs/50011.png";
 import dragontiger from "../../imgs/dragon-tiger.png";
 import mania from "../../imgs/MANIA.jpg";
 import wild from "../../imgs/WILD.jpg";
+import Futebolfever from "../../imgs/futebol.jpeg";
+import smartgold from "../../imgs/gold.jpeg";
 
 import { FaDice, FaChess, FaBurn } from "react-icons/fa";
 import { CgGames } from "react-icons/cg";
@@ -156,6 +159,8 @@ function Games() {
       payout: "95.75%",
       available: true,
     },
+    { name: "Gem Stones Gold", img: Futebolfever, available: true },
+    { name: "Futebol Fever", img: smartgold, available: true },
     {
       name: "Tiger",
       img: fortuneImg,
@@ -246,7 +251,7 @@ function Games() {
         <div
           className="game-card-casa"
           onClick={() =>
-            handleNewCardClick("https://go.aff.br4-partners.com/chhi65y1")
+            handleNewCardClick("https://www.uxbet.com.br/register?id=66da1c7470c52800299806f2")
           }
         >
           <img src={cardsImg} alt="Card 1" />
@@ -257,6 +262,13 @@ function Games() {
           onClick={() => handleNewCardClick("https://bit.ly/MATEUSSTART")}
         >
           <img src={minesImg} alt="Card 2" />
+        </div>
+         {/* Segundo Card */}
+         <div
+          className="game-card-casa"
+          onClick={() => handleNewCardClick("https://go.aff.betmillion.io/fl468c94")}
+        >
+          <img src={minesImg2} alt="Card 2" />
         </div>
       </div>
       <div
