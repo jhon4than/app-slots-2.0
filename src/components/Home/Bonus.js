@@ -42,7 +42,7 @@ const Bonus = () => {
               )
             }
           >
-            <FaWhatsapp /> Entrar Na Comunidade WhatsApp
+            <FaWhatsapp /> Entrar Na Comunidade WhatsApp 
           </button>
           <button
             onClick={() =>
