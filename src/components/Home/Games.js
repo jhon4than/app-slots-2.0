@@ -4,7 +4,7 @@ import "./Games.css"; // Importe seu arquivo CSS
 // Importando imagens
 import cardsImg from "../../assets/uxbet.jpeg";
 import minesImg from "../../assets/br4bet.jpg";
-import minesImg2 from "../../assets/betmilion.jpeg";
+import minesImg2 from "../../assets/realsbet-logo_646_380_HOME_BOX.webp";
 import fortuneImg from "../../imgs/fortune.jpg";
 import bacImg from "../../imgs/bacbo.jpg";
 import aviatorImg from "../../imgs/aviator.jpeg";
@@ -31,6 +31,7 @@ import mania from "../../imgs/MANIA.jpg";
 import wild from "../../imgs/WILD.jpg";
 import Futebolfever from "../../imgs/futebol.jpeg";
 import smartgold from "../../imgs/gold.jpeg";
+import novosortudo from "../../assets/novosortudo.jpeg";
 
 import { FaDice, FaChess, FaBurn } from "react-icons/fa";
 import { CgGames } from "react-icons/cg";
@@ -138,6 +139,13 @@ function Games() {
   };
 
   const gamesList = [
+    {
+      name: "Tigre Sortudo",
+      img: novosortudo,
+      category: "Slots",
+      payout: "95.75%",
+      available: true,
+    },
     {
       name: "Cash Mania",
       img: mania,
@@ -268,7 +276,7 @@ function Games() {
          {/* Segundo Card */}
          <div
           className="game-card-casa"
-          onClick={() => handleNewCardClick("https://go.aff.betmillion.io/fl468c94")}
+          onClick={() => handleNewCardClick("https://afiliado.realsbet.com/visit/?bta=35427&brand=realsbet")}
         >
           <img src={minesImg2} alt="Card 2" />
         </div>

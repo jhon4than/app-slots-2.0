@@ -47,7 +47,7 @@ const Bonus = () => {
           <button
             onClick={() =>
               window.open(
-                "https://go.aff.br4-partners.com/CASANOVA_MATEUS",
+                "https://go.aff.br4-partners.com/chhi65y1",
                 "_blank"
               )
             }
@@ -57,7 +57,7 @@ const Bonus = () => {
           <button
             onClick={() =>
               window.open(
-                "https://zordbeet.com?action=register&affiliate=b6JnfGF7fXMjOjB79zVoLCJoeWFweCIyICJuYXRofXMteWF68W3nNTBAZ12g8WptY1auIjpj8WQjOjAjNDEpIjpjfGouZSIyICIvNnA3MTUqOT91Iz7",
+                "https://afiliado.realsbet.com/visit/?bta=35427&brand=realsbet",
                 "_blank"
               )
             }
