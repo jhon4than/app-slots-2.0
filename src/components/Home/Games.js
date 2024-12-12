@@ -259,7 +259,7 @@ function Games() {
         <div
           className="game-card-casa"
           onClick={() =>
-            handleNewCardClick("https://www.uxbet.com.br/register?id=66da1c7470c52800299806f2")
+            handleNewCardClick("https://aff.uxbet.com.br/guest?btag=36476&brand=uxbet")
           }
         >
           <img src={cardsImg} alt="Card 1" />
