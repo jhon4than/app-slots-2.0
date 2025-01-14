@@ -276,7 +276,7 @@ function Games() {
          {/* Segundo Card */}
        {/*   <div
           className="game-card-casa"
-          onClick={() => handleNewCardClick("https://afiliado.realsbet.com/visit/?bta=35427&brand=realsbet")}
+          onClick={() => handleNewCardClick("")}
         >
           <img src={minesImg2} alt="Card 2" />
         </div> */}

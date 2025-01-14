@@ -57,7 +57,7 @@ const Bonus = () => {
           <button
             onClick={() =>
               window.open(
-                "https://afiliado.realsbet.com/visit/?bta=35427&brand=realsbet",
+                "https://go.aff.metgol.io/cf6zuszr",
                 "_blank"
               )
             }
