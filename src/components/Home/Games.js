@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Games.css"; // Importe seu arquivo CSS
 // Importando imagens
-import cardsImg from "../../assets/uxbet.jpeg";
+import cardsImg from "../../assets/metgol.jpeg";
 import minesImg from "../../assets/br4bet.jpg";
 import minesImg2 from "../../assets/realsbet-logo_646_380_HOME_BOX.webp";
 import fortuneImg from "../../imgs/fortune.jpg";
@@ -259,7 +259,7 @@ function Games() {
         <div
           className="game-card-casa"
           onClick={() =>
-            handleNewCardClick("https://aff.uxbet.com.br/guest?btag=36476&brand=uxbet")
+            handleNewCardClick("https://go.aff.metgol.io/cf6zuszr")
           }
         >
           <img src={cardsImg} alt="Card 1" />
@@ -274,12 +274,12 @@ function Games() {
           <img src={minesImg} alt="Card 2" />
         </div>
          {/* Segundo Card */}
-         <div
+       {/*   <div
           className="game-card-casa"
           onClick={() => handleNewCardClick("https://afiliado.realsbet.com/visit/?bta=35427&brand=realsbet")}
         >
           <img src={minesImg2} alt="Card 2" />
-        </div>
+        </div> */}
       </div>
       <div
         className="webview-container"
