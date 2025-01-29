@@ -85,6 +85,17 @@
   right: 0;
   text-align: center; /* Centralizando o texto */
   margin: 4px;
+  animation: pulsate 2s infinite;
+}
+
+/* Keyframes para a animação */
+@keyframes pulsate {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Aumenta levemente no meio do ciclo */
+  }
 }
 
 .game-name {
