@@ -84,6 +84,7 @@
   left: 0;
   right: 0;
   text-align: center; /* Centralizando o texto */
+  margin: 4px;
 }
 
 .game-name {
@@ -352,4 +353,16 @@
     /* ... other responsive adjustments ... */
   }
   
+}
+
+/* Barra de BET */
+.bet-bar {
+  background-color: #ffe58f;
+  color: #4d4d4d;
+  text-align: center;
+  font-weight: bold;
+  padding: 6px 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
 }
