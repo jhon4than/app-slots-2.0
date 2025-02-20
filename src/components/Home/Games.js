@@ -4,6 +4,8 @@ import "./Games.css"; // Importe seu arquivo CSS
 // Importando imagens
 import cardsImg from "../../assets/metgol.jpeg";
 import minesImg from "../../assets/br4bet.jpg";
+import lendarias from "../../assets/lendarias.jpg";
+import uxbet from "../../assets/uxbet.jpg";
 import minesImg2 from "../../assets/realsbet-logo_646_380_HOME_BOX.webp";
 import fortuneImg from "../../imgs/fortune.jpg";
 import bacImg from "../../imgs/bacbo.jpg";
@@ -372,26 +374,23 @@ function Games() {
         {/* Primeiro Card */}
         <div
           className="game-card-casa"
-          onClick={() => handleNewCardClick("https://go.aff.metgol.io/cf6zuszr")}
+          onClick={() => handleNewCardClick("https://go.aff.br4-partners.com/chhi65y1")}
         >
-          <img src={cardsImg} alt="Card 1" />
+          <img src={minesImg} alt="Card 1" />
         </div>
         {/* Segundo Card */}
         <div
           className="game-card-casa"
-          onClick={() => handleNewCardClick("https://go.aff.br4-partners.com/chhi65y1")}
+          onClick={() => handleNewCardClick("https://lendarias.com/?r=cunqxvdx")}
         >
-          <img src={minesImg} alt="Card 2" />
+          <img src={lendarias} alt="Card 2" />
         </div>
-        {/*
-        Exemplo se quiser colocar o terceiro card:
         <div
           className="game-card-casa"
-          onClick={() => handleNewCardClick("URL_DESEJADA")}
+          onClick={() => handleNewCardClick("https://aff.uxbet.com.br/guest?btag=36476&brand=uxbet")}
         >
-          <img src={minesImg2} alt="Card 3" />
+          <img src={uxbet} alt="Card 3" />
         </div>
-        */}
       </div>
       <div
         className="webview-container"
