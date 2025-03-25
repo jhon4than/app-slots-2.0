@@ -6,6 +6,7 @@ import cardsImg from "../../assets/metgol.jpeg";
 import minesImg from "../../assets/br4bet.jpg";
 import lendarias from "../../assets/lendarias.jpg";
 import uxbet from "../../assets/uxbet.jpg";
+import lion777 from "../../assets/lion777.jpg";
 import minesImg2 from "../../assets/realsbet-logo_646_380_HOME_BOX.webp";
 import fortuneImg from "../../imgs/fortune.jpg";
 import bacImg from "../../imgs/bacbo.jpg";
@@ -35,6 +36,9 @@ import Futebolfever from "../../imgs/futebol.jpeg";
 import smartgold from "../../imgs/gold.jpeg";
 import novosortudo from "../../assets/novosortudo.jpeg";
 import snake from "../../assets/snake.jpeg";
+import ImageModal from "./ImageModal"; // ajuste o caminho conforme necessário
+import modalImage from "../../assets/IMG_6102.JPG"; // ou qualquer imagem que desejar
+
 
 import { FaDice, FaChess, FaBurn } from "react-icons/fa";
 import { CgGames } from "react-icons/cg";
@@ -45,6 +49,8 @@ function Games() {
   const [payouts, setPayouts] = useState({});
   const [selectedBets, setSelectedBets] = useState({});
   const [webViewContent, setWebViewContent] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(true); // abre por padrão ao carregar
+
 
   // Mapeamento das bets por jogo
   const betMappings = {
@@ -369,6 +375,13 @@ function Games() {
     <div className="games-background">
       <HeaderLogo />
 
+      <ImageModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        imageSrc={modalImage}
+        altText="Promoção especial"
+      />
+
       {/* Novos Cards acima do título */}
       <div className="games-grid-casa">
         {/* Primeiro Card */}
@@ -387,9 +400,9 @@ function Games() {
         </div>
         <div
           className="game-card-casa"
-          onClick={() => handleNewCardClick("https://aff.uxbet.com.br/guest?btag=36476&brand=uxbet")}
+          onClick={() => handleNewCardClick("https://www.lion777bet-br.com/share/6790003")}
         >
-          <img src={uxbet} alt="Card 3" />
+          <img src={lion777} alt="Card 3" />
         </div>
       </div>
       <div
