@@ -10,6 +10,7 @@ const ProtectedPage = () => {
   const navigate = useNavigate();
   const setAuthenticated = () => {
     localStorage.setItem("isAuthenticated", "true");
+    localStorage.setItem("isAdmin", "true"); // define como admin
     setIsAuthenticated(true);
   };
   
