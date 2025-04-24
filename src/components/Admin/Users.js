@@ -15,6 +15,7 @@ import {
   updateDoc,
   doc,
 } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCfaNmtgyo1VgqVFIHJ8vq-dekSJyjjk9c",
@@ -41,6 +42,7 @@ const Users = () => {
     email: "",
     whatsapp: "",
   });
+  const navigate = useNavigate();
 
   const saveUser = async (email, whatsapp) => {
     try {
@@ -194,6 +196,23 @@ const Users = () => {
   return (
     <div className="admin-container">
       <h1>Lista de Usuários</h1>
+
+      <div style={{ marginBottom: "20px", textAlign: "right" }}>
+      <button
+        onClick={() => navigate("/admin/platforms")}
+        style={{
+          padding: "10px 20px",
+          backgroundColor: "#28a745",
+          color: "#fff",
+          border: "none",
+          borderRadius: "6px",
+          cursor: "pointer",
+        }}
+      >
+        Ir para Plataformas
+      </button>
+    </div>
+
       <div className="admin-actions">
         <div className="add-user-form">
           <input

@@ -38,6 +38,8 @@ import novosortudo from "../../assets/novosortudo.jpeg";
 import snake from "../../assets/snake.jpeg";
 import ImageModal from "./ImageModal"; // ajuste o caminho conforme necessário
 import modalImage from "../../assets/IMG_6102.JPG"; // ou qualquer imagem que desejar
+import { collection, getDocs, query, orderBy } from "firebase/firestore";
+import { db } from "../../firebase-config";
 
 
 import { FaDice, FaChess, FaBurn } from "react-icons/fa";
@@ -50,6 +52,7 @@ function Games() {
   const [selectedBets, setSelectedBets] = useState({});
   const [webViewContent, setWebViewContent] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(true); // abre por padrão ao carregar
+  const [platformCards, setPlatformCards] = useState([]);
 
 
   // Mapeamento das bets por jogo
@@ -307,6 +310,18 @@ function Games() {
     return hash;
   };
 
+  useEffect(() => {
+    const fetchPlatforms = async () => {
+      const q = query(collection(db, "plataformas"), orderBy("timestamp", "desc"));
+      const snapshot = await getDocs(q);
+      const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+      setPlatformCards(data);
+    };
+  
+    fetchPlatforms();
+  }, []);
+
+  
   // Ao montar o componente, inicializa dados e faz interval de 3 em 3 minutos
   useEffect(() => {
     initializeData();
@@ -383,15 +398,14 @@ function Games() {
       />
 
       {/* Novos Cards acima do título */}
-      <div className="games-grid-casa">
-        {/* Primeiro Card */}
+      {/* <div className="games-grid-casa">
+     
         <div
           className="game-card-casa"
           onClick={() => handleNewCardClick("https://go.aff.br4-partners.com/chhi65y1")}
         >
           <img src={minesImg} alt="Card 1" />
         </div>
-        {/* Segundo Card */}
         <div
           className="game-card-casa"
           onClick={() => handleNewCardClick("https://lendarias.com/?r=cunqxvdx")}
@@ -405,6 +419,20 @@ function Games() {
           <img src={lion777} alt="Card 3" />
         </div>
       </div>
+      {/* Novos Cards acima do título - DINÂMICO */}
+      
+      <div className="games-grid-casa">
+        {platformCards.map((p) => (
+          <div
+            key={p.id}
+            className="game-card-casa"
+            onClick={() => handleNewCardClick(p.link)}
+          >
+            <img src={p.imagem} alt={p.nome} />
+          </div>
+        ))}
+      </div>
+
       <div
         className="webview-container"
         dangerouslySetInnerHTML={{ __html: webViewContent }}

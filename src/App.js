@@ -27,6 +27,7 @@ import Spaceman from "./components/Spaceman/Spaceman";
 import Login from "./components/Home/Login";
 import ProtectedPage from "./components/Admin/ProtectedPage";
 import Users from "./components/Admin/Users";
+import Platforms from "./components/Admin/Platforms";
 // import Create from "./components/Admin/UserManagement";
 import ProtectAdmin from "./components/Admin/ProtectAdmin";
 
@@ -111,6 +112,14 @@ const App = () => {
             element={
               <ProtectAdmin>
                 <Users></Users>
+              </ProtectAdmin>
+            }
+          />
+          <Route
+            path="/admin/platforms"
+            element={
+              <ProtectAdmin>
+                <Platforms></Platforms>
               </ProtectAdmin>
             }
           />
