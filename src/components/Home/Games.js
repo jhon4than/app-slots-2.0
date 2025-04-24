@@ -6,7 +6,7 @@ import cardsImg from "../../assets/metgol.jpeg";
 import minesImg from "../../assets/br4bet.jpg";
 import lendarias from "../../assets/lendarias.jpg";
 import uxbet from "../../assets/uxbet.jpg";
-import lion777 from "../../assets/coruja.jpg";
+import lion777 from "../../assets/eden.jpg";
 import minesImg2 from "../../assets/realsbet-logo_646_380_HOME_BOX.webp";
 import fortuneImg from "../../imgs/fortune.jpg";
 import bacImg from "../../imgs/bacbo.jpg";
@@ -400,7 +400,7 @@ function Games() {
         </div>
         <div
           className="game-card-casa"
-          onClick={() => handleNewCardClick("https://www.coruja777-hk.com/share/8678048")}
+          onClick={() => handleNewCardClick("https://www.eden-bet-br.com/share/7057517")}
         >
           <img src={lion777} alt="Card 3" />
         </div>
