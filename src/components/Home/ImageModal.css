@@ -18,6 +18,9 @@
     padding: 1rem;
     border-radius: 8px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .modal-image {
@@ -35,5 +38,32 @@
     font-size: 24px;
     color: #fff;
     cursor: pointer;
+  }
+  
+  .whatsapp-button {
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  }
+  
+  .whatsapp-button:hover {
+    background: #128C7E;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+  }
+  
+  .whatsapp-button:active {
+    transform: translateY(0);
   }
   

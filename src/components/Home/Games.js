@@ -37,7 +37,7 @@ import smartgold from "../../imgs/gold.jpeg";
 import novosortudo from "../../assets/novosortudo.jpeg";
 import snake from "../../assets/snake.jpeg";
 import ImageModal from "./ImageModal"; // ajuste o caminho conforme necessário
-import modalImage from "../../assets/IMG_6102.JPG"; // ou qualquer imagem que desejar
+import modalImage from "../../assets/imgaten.jpg"; // ou qualquer imagem que desejar
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import { db } from "../../firebase-config";
 

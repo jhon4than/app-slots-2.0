@@ -11,12 +11,20 @@ const ImageModal = ({ isOpen, onClose, imageSrc, altText }) => {
     }
   };
 
+  // Função para abrir o WhatsApp
+  const handleWhatsAppClick = () => {
+    window.open("https://wa.link/6lj64j", "_blank");
+  };
+
   return (
     <div className="modal-overlay" onClick={handleOverlayClick}>
       <div className="modal-content">
         <img src={imageSrc} alt={altText} className="modal-image" />
         <button className="modal-close" onClick={onClose}>
           ✖
+        </button>
+        <button className="whatsapp-button" onClick={handleWhatsAppClick}>
+          📱 Falar no WhatsApp
         </button>
       </div>
     </div>

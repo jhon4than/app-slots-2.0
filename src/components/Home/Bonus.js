@@ -37,12 +37,12 @@ const Bonus = () => {
           <button
             onClick={() =>
               window.open(
-                "https://chat.whatsapp.com/C2Mx9gRaRhTIppBmZC3IjJ",
+                "https://wa.link/6lj64j",
                 "_blank"
               )
             }
           >
-            <FaWhatsapp /> Entrar Na Comunidade WhatsApp 
+            <FaWhatsapp /> Entrar Na Comunidade WhatsApp
           </button>
           <button
             onClick={() =>
